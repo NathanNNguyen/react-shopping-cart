@@ -13,7 +13,12 @@ function App() {
 
 	const addItem = item => {
 		// add the given item to the cart
+		setCart([...cart, item])
 	};
+
+	// const removeItem = item => {
+	// 	setCart([...cart, cart - item])
+	// }
 
 	return (
 		<div className="App">
